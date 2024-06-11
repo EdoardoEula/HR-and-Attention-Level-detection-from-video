@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR-EBR</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="video-container">
+    <video id="video" width="640" height="480" autoplay></video>
+    <div class="overlay">
+        <div class="vitals">
+            <div class="rectangle">
+                <div class="skill">
+                    <div class="outer">
+                        <div class="inner">
+                            <div id="number"></div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160">
+                        <defs>
+                            <linearGradient id="GradientColor">
+                                <stop offset="20%" stop-color="#DEB841" />
+                                <stop offset="80%" stop-color="#DE9E36" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="tit">Attenzione</div>
+            </div>
+    
+            <div class="rectangle">
+                <div class="container">
+                    <div id="widget-container">
+                        <div id="widget-image">
+                            <img src="heart.png" alt="Heart">
+                        </div>
+                        <div id="widget-bpm">--</div>
+                    </div>
+                    <div id="widget-avg-bpm">Media: --</div>
+                </div>
+                <div class="tit">BPM</div>
+            </div>
+        </div>
+    
+        <div class="warning">
+            <div id="warning-image">
+                <img src="warning.webp" alt="Warning">
+            </div>
+            <div id="warning-text">Bassa Luce Ambientale</div>
+        </div>
+    </div>
+        
+    </div>
+</body>
+</html>
